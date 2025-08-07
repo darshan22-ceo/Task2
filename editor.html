@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add New Blog Post</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Gossip</div>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="editor.html" class="active">Add Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Add New Blog Post</h1>
+    <form id="blogForm">
+      <label>Title:</label>
+      <input type="text" id="title" required />
+      
+      <label>Image URL:</label>
+      <input type="url" id="image" required />
+      
+      <label>Summary:</label>
+      <textarea id="summary" rows="3" required></textarea>
+      
+      <label>Full Content:</label>
+      <textarea id="content" rows="6" required></textarea>
+      
+      <label>Category:</label>
+      <input type="text" id="category" required />
+
+      
+      <button type="submit">Save Blog</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gossip Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="js/editor.js"></script>
+</body>
+</html>
